@@ -1,0 +1,142 @@
+.main-container {
+    margin: auto;
+    background: white;
+    width: 66%;
+
+    margin: 20px auto;
+    background: white;
+    width: 66%;
+  }
+
+.main-container{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-around;
+}
+
+/*-------------------GENERAL--------------------*/
+ul {
+    list-style-type: none;
+}
+.clear{
+    clear: both;
+}
+h1,
+h2{
+    text-transform: uppercase;
+}
+/*-------------------ASIDE--------------------*/
+aside {
+    background-color: #786e8f;
+    flex-basis: 15%;
+}
+aside *{
+    color: white;
+}
+aside h2 {
+    letter-spacing: 3px;
+}
+aside section h2:first-child{
+    border-bottom: 2px solid rgb(239, 230, 230);
+}
+#profile-pic img{
+    border-radius: 50%;
+    width: 250px;
+    height:250px;
+}
+/*-------------------MAIN--------------------*/
+main{
+    flex-basis: 60%;
+}
+main section h2{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.hero {
+    background-color: #b2a7cb;
+    box-shadow: 2px 2px 40px 1px #aba2b1 inset;
+    padding: 15% 0;
+/*--------- Padding ->Arriba, Derecha, Abajo---------*/
+    text-align: center;
+
+}
+.hero h2{
+    color: white;
+    border-top: 2px solid white;
+    letter-spacing: 10px;
+}
+.hero h1{
+    letter-spacing: 10px;
+}
+.about-me p{
+    line-height: 2.3em;
+    background-color: #b2a7cb;
+    padding: 20px 32px;
+}
+article h3,
+article h4{
+    font-weight: bold;
+}
+article ul{
+    list-style-type: square;
+}
+/*REFERENCES*/
+.references{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #b2a7cb;
+}
+.references article{
+    width: 50%;
+    text-align: center;
+}
+/* DL */
+dl{
+    display: flex;
+    flex-wrap: wrap;
+}
+dt{
+    font-weight: bolder;
+}
+dt,
+dd{
+    line-height: 1.5em;
+    border-top: 1px solid white;
+    flex-basis: 40%;
+    margin: 0;
+}
+dt:last-of-type,
+dd:last-of-type{
+    border-bottom: 1px solid white;
+}
+/*-----------------------ICON --------------- */
+.fb::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f02d";
+}
+.social-item::before{
+    padding-right: 5px;
+}
+.tw::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f02d";
+}
+.social-item2::before{
+    padding-right: 5px;
+}
+/*----------------------- METER -----------------*/
+meter{
+    display: block;
+    width:80%;
+}
+meter::-webkit-meter-optimum-value{
+    background: none;
+    background-color: #b2a7cb;
+}
+meter::-webkit-meter-bar{
+    background: none;
+    background-color: white;
+}
